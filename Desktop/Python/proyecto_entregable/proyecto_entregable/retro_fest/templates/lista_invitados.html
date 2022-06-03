@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de Familiares</title>
+</head>
+<body>
+    
+
+    {% for Familiares in datos %}
+        <p>{{Familiares.nombre}},{{Familiares.parentezco}},{{Familiares.edad}} </p>
+    {% endfor %}
+
+    
+    {% for amistades in datos %}
+        <p>{{amistades.nombre}},{{amistades.parentezco}},{{amistades.edad}} </p>
+    {% endfor %}
+    
+    
+    {% for compiches in datos %}
+        <p>{{compinches.nombre}},{{compiches.parentezco}},{{compiches.edad}} </p>
+    {% endfor %}
+    
+
+    
+</body>
+</html>
